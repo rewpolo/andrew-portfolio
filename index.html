@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Portfolio — Full Website Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#top">Andrew</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+          Menu
+        </button>
+        <div id="nav-links" class="nav-links">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="theme-toggle" type="button" aria-pressed="false">Toggle theme</button>
+      </nav>
+      <section id="top" class="hero">
+        <div>
+          <p class="eyebrow">Fully functional demo website</p>
+          <h1>Build a portfolio that actually works.</h1>
+          <p>
+            This site includes smooth navigation, theme switching, an email capture, client
+            testimonials, and a contact form with validation.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View work</a>
+            <a class="button ghost" href="#contact">Start a project</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Quick stats</h2>
+          <ul>
+            <li><strong>6+</strong> years building interfaces</li>
+            <li><strong>48</strong> shipped client projects</li>
+            <li><strong>99%</strong> on-time delivery rate</li>
+          </ul>
+          <div class="progress">
+            <span>Availability</span>
+            <div class="bar"><div class="fill"></div></div>
+            <small>3 slots left in the next 30 days</small>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="section-heading">
+          <h2>About Andrew</h2>
+          <p>Strategy-first web builds with measurable outcomes.</p>
+        </div>
+        <div class="grid two">
+          <p>
+            I help founders and teams ship websites that convert. Every build includes accessible
+            design, performance budgets, and a clear content hierarchy.
+          </p>
+          <div class="card">
+            <h3>Highlights</h3>
+            <ul>
+              <li>Performance-first layout systems</li>
+              <li>SEO-ready information architecture</li>
+              <li>Clear calls to action and conversion paths</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section muted">
+        <div class="section-heading">
+          <h2>Services</h2>
+          <p>Pick a plan that matches your timeline.</p>
+        </div>
+        <div class="grid three">
+          <article class="card">
+            <h3>Launch</h3>
+            <p>Perfect for MVPs and founders needing a confident digital presence.</p>
+            <ul>
+              <li>1-page responsive site</li>
+              <li>Copy refinement</li>
+              <li>Analytics setup</li>
+            </ul>
+            <button class="button ghost" type="button">Request launch kit</button>
+          </article>
+          <article class="card">
+            <h3>Growth</h3>
+            <p>Multi-page site with storytelling and CRM-ready lead capture.</p>
+            <ul>
+              <li>Up to 6 pages</li>
+              <li>Email capture workflow</li>
+              <li>CMS-ready structure</li>
+            </ul>
+            <button class="button ghost" type="button">Build a growth plan</button>
+          </article>
+          <article class="card">
+            <h3>Retain</h3>
+            <p>Ongoing optimization to keep your site evolving with your customers.</p>
+            <ul>
+              <li>Monthly audits</li>
+              <li>A/B experiments</li>
+              <li>Performance monitoring</li>
+            </ul>
+            <button class="button ghost" type="button">Start optimization</button>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <h2>Recent work</h2>
+          <p>Interactive case studies with measurable results.</p>
+        </div>
+        <div class="grid two">
+          <article class="project">
+            <h3>Northwind Labs</h3>
+            <p>Redesigned onboarding flow increasing trial signups by 38%.</p>
+            <div class="tags">
+              <span>UX</span>
+              <span>Product</span>
+              <span>Analytics</span>
+            </div>
+          </article>
+          <article class="project">
+            <h3>Brightline Studio</h3>
+            <p>New portfolio system that cut maintenance time in half.</p>
+            <div class="tags">
+              <span>Branding</span>
+              <span>Motion</span>
+              <span>Web</span>
+            </div>
+          </article>
+        </div>
+        <div class="newsletter">
+          <div>
+            <h3>Stay in the loop</h3>
+            <p>Get monthly insights on conversions and web performance.</p>
+          </div>
+          <form id="newsletter-form" class="form-inline">
+            <label class="sr-only" for="newsletter-email">Email</label>
+            <input id="newsletter-email" name="email" type="email" placeholder="you@company.com" required />
+            <button class="button primary" type="submit">Subscribe</button>
+            <span class="form-message" role="status"></span>
+          </form>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section muted">
+        <div class="section-heading">
+          <h2>Client love</h2>
+          <p>What partners say about the process.</p>
+        </div>
+        <div class="carousel" aria-live="polite">
+          <button class="carousel-control" type="button" data-dir="prev">←</button>
+          <div class="carousel-cards">
+            <article class="card testimonial is-active">
+              <p>“We launched in two weeks and beat our signup target in 48 hours.”</p>
+              <strong>— Camille, Founder</strong>
+            </article>
+            <article class="card testimonial">
+              <p>“The structure and clarity of the new site doubled our demo requests.”</p>
+              <strong>— Ravi, Growth Lead</strong>
+            </article>
+            <article class="card testimonial">
+              <p>“Every decision was explained with metrics. The handoff was seamless.”</p>
+              <strong>— Elena, Product Director</strong>
+            </article>
+          </div>
+          <button class="carousel-control" type="button" data-dir="next">→</button>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-heading">
+          <h2>Contact</h2>
+          <p>Tell me about your project and I’ll reply within 24 hours.</p>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="grid two">
+            <label>
+              Name
+              <input name="name" type="text" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" required />
+            </label>
+          </div>
+          <label>
+            Project details
+            <textarea name="details" rows="4" required></textarea>
+          </label>
+          <label class="checkbox">
+            <input name="consent" type="checkbox" required />
+            I agree to be contacted about this request.
+          </label>
+          <button class="button primary" type="submit">Send message</button>
+          <p class="form-message" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2024 Andrew Portfolio. Built with accessibility, performance, and care.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
